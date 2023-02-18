@@ -24,18 +24,19 @@
                 android:gravity="end"
                 android:text="0"
                 android:textSize="15dp"
-                tools:ignore="TextSizeCheck" />
+                tools:ignore="TextSizeCheck"
+                android:maxWidth="800dp"/>
         </TableRow>
         <TableRow>
 
             <TextView
                 android:id="@+id/result_tv"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:text="0"
-                android:layout_column="1"
                 android:textAlignment="textEnd"
-                android:textSize="40dp" />
+                android:textSize="40dp"
+                android:layout_span="2"/>
 
         </TableRow>
 
@@ -45,14 +46,15 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:background="#F1F1F1"
-            android:paddingVertical="16dp">
+            android:paddingVertical="16dp"
+            >
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:layout_column="0"
-                android:layout_padding="50dp">
+                android:layout_column="0">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.google.android.material.button.MaterialButton;
+
+import org.mariuszgromada.math.mxparser.Expression;
 import org.mozilla.javascript.Context;
 import org.mozilla.javascript.Scriptable;
 
@@ -21,8 +23,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     MaterialButton button0, button1, button2, button3, button4, button5, button6, button7, button8, button9;
     MaterialButton buttonAC, buttonDot;
 
-
-    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,6 +69,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String buttonText = button.getText().toString();
         String dataToCalculate = solutionTv.getText().toString();
 
+        if (dataToCalculate.startsWith("0")) dataToCalculate = dataToCalculate.substring(1);
+
         if (buttonText.equals("AC")) {
             solutionTv.setText("");
             resultTv.setText("0");
@@ -79,15 +81,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             return;
         }
         if (buttonText.equals("C")) {
-            dataToCalculate = dataToCalculate.substring(0, dataToCalculate.length() - 1);
+            if (dataToCalculate.length() > 0)
+                dataToCalculate = dataToCalculate.substring(0, dataToCalculate.length() - 1);
+            else dataToCalculate = "0";
         } else {
-
             dataToCalculate = dataToCalculate + buttonText;
-
         }
         solutionTv.setText(dataToCalculate);
+
         String finalResult = getResult(dataToCalculate);
-        if (!finalResult.equals("Error")) {
+        if (!finalResult.equals("NaN")) {
             resultTv.setText(finalResult);
         } else {
             return;
@@ -96,26 +99,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     String getResult(String data) {
-
+        //boolean test = Pattern.matches("^[-+]?[0-9]*\\.?[0-9]+([-+*/]?([0-9]*\\.?[0-9]+))*$", data);
         try {
-            boolean test = Pattern.matches("^([-+/*]\\d+(\\.\\d+)?)*", data);
-            if (test) {
+            //TODO: mXparser
+/*
                 Context context = Context.enter();
                 context.setOptimizationLevel(-1);
                 Scriptable scriptable = context.initStandardObjects();
                 String finalResult = context.evaluateString(scriptable, data, "Javascript", 1, null).toString();
-
-                if (finalResult.endsWith(".0")) {
+*/
+            Expression expression = new Expression(data);
+            Double finalResult = expression.calculate();
+                /*if (finalResult.endsWith(".0")) {
                     finalResult = finalResult.replace(".0", "");
-                }
+                }*/
 
-                return finalResult;
+            return finalResult.toString();
 
-            } else {
-                return "Error!";
-            }
-        }catch (Exception e){
-            return "Error!";
+        } catch (Exception e) {
+            return "NaN";
         }
     }
 }

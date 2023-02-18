@@ -127,7 +127,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             dataToCalculate = dataToCalculate + buttonText;
         }
         if(buttonText.equals("x^y")){
-            dataToCalculate = dataToCalculate.substring(0, dataToCalculate.length() - 1);
+            dataToCalculate = dataToCalculate.substring(0, dataToCalculate.length() - 3);
             dataToCalculate = dataToCalculate + "^";
         }
         if(buttonText.equals("x!")){

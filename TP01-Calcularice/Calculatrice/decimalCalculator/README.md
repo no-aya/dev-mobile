@@ -2,7 +2,9 @@
 
 ## Description
 Ce projet vise à créer une calculatrice scientifique en utilisant Android Studio et Java.
-![img.png](src/main/res/drawable/ic_launcher_foreground.xml)
+
+![img_2.png](img_2.png)
+
 On distingue 2 partie : 
 - Partie 1 : interface graphique
     - Nous utiliserons Material Design pour créer les composants graphiques

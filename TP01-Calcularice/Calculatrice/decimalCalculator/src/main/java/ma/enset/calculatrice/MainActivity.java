@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         {
             resultTv = findViewById(R.id.result_small);
             solutionTv = findViewById(R.id.result_tv);
@@ -73,7 +72,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 assignId(buttonRad, R.id.button_rad);
                 assignId(buttonDeg, R.id.button_deg);
             }
-        }
+        }//Assigning Ids block
         if (savedInstanceState != null) {
             String solution = savedInstanceState.getString("solution");
             solutionTv.setText(solution);
@@ -186,7 +185,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (!finalResult.equals("NaN")) {
             resultTv.setText(finalResult);
         }
-
     }
 
     String getResult(String data) {

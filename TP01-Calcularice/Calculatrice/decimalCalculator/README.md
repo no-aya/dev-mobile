@@ -12,6 +12,28 @@ On distingue 2 partie :
   - Nous utiliseront les classes `Button` et `TextView` pour récupérer les données saisies par l'utilisateur
   - Nous utiliseront les classes `View.OnClickListener` pour gérer les événements
 
+## Partie 1 : interface graphique
+### 1.	Layout Portrait
+Coude source du button :
+```xml
+<com.google.android.material.button.MaterialButton
+        android:layout_width="72dp" 
+        android:layout_height="72dp"
+        app:cornerRadius="36dp"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+        android:layout_margin="12dp"
+        android:id="@+id/button_7"
+        android:text="7"
+        android:textSize="32dp"
+        android:textColor="@color/white"
+        />
+```
+![img.png](img.png)
+### 2.	Layout Paysage
+Pour cette partie, on garde le même layout des boutons précédents, mais on changera le layout de l’écran.
+![img_1.png](img_1.png)
+On ne va pas intégrer les EventListener dans les fichier XML, par contre nous allons les appliquer dans le code JAVA au sein de la méthode onCreate().
+
 ## Partie 2 : code java
 On utilisera une seule classe `MainActivity` pour notre calculatrice.
 ### 1.	Définition des variables
@@ -130,7 +152,7 @@ A chaque fois qu’on clique sur un bouton :
 2-	On teste le bouton cliqué
 3-	Si l’expression est calculable on fait appel à getResult
 ```java
-![img_4.png](img_4.png)@Override
+@Override
     public void onClick(View view) {
         MaterialButton button = (MaterialButton) view;
         String buttonText = button.getText().toString();

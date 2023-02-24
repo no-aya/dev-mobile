@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">تسجيل الدخول [TP2]</string>
+    <string name="reset">إعادة</string>
+    <string name="back">رجوع</string>
+    <string name="tutorial">اكتب معلوماتك</string>
+    <string name="toast_missu">عملك لا يزال معلق!</string>
+    <string name="toast_back">مرحبًا بعودتك! استئناف عملك ...</string>
+    <string name="toast_res">إعادة بدء عملك!</string>
+    <string name="deuxieme_champs">كلمة المرور</string>
+    <string name="premier_champs">بريد إلكتروني</string>
+    <string name="conn">تسجيل الدخول</string>
+    <string name="titre">معلوماتك</string>
+</resources>

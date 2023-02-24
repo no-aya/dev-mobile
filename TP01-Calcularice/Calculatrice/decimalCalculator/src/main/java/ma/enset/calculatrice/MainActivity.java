@@ -10,10 +10,7 @@ import android.widget.TextView;
 import com.google.android.material.button.MaterialButton;
 
 import org.mariuszgromada.math.mxparser.Expression;
-import org.mozilla.javascript.Context;
-import org.mozilla.javascript.Scriptable;
 
-import java.util.regex.Pattern;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -215,10 +212,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 */
             Expression expression = new Expression(data);
             Double finalResult = expression.calculate();
+
                 /*if (finalResult.endsWith(".0")) {
                     finalResult = finalResult.replace(".0", "");
                 }*/
-
             return finalResult.toString();
 
         } catch (Exception e) {

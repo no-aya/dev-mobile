@@ -43,8 +43,6 @@ Note : Toutes les valeurs textuelles sont stockées dans le fichier strings.xml,
 ### activity_main.xml
 Cette interface contient 2 champs de saisie [Email, Mot de passe] et un bouton [Se connecter, Réniitialiser]
 
-![image](https://user-images.githubusercontent.com/106016869/221325639-ea50ed3a-4962-4a2e-88b5-8b4a0dbe8f9e.png)
-
 Les champs de saisie sont des composants Material Design
 ```xml
 <com.google.android.material.textfield.TextInputLayout 
@@ -63,6 +61,8 @@ Note : Nous utilisons Material Design version 2
 
 ### activity_result.xml
 C'est l'interface d'accueil, elle affichera les coordonnées saisis par l'utilisateur dans les champs de saisie de l'interface Main Screen.
+
+![image](https://user-images.githubusercontent.com/106016869/221325639-ea50ed3a-4962-4a2e-88b5-8b4a0dbe8f9e.png)
 
 ## Partie 2 : Splash Screen
 Le Splash Screen est l'écran d'accueil de l'application, il est affiché au lancement de l'application et il disparait au bout de 3 secondes.

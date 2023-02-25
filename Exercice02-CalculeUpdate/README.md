@@ -1,7 +1,8 @@
 # TP2 : Splash screen-Navigation entre Écrans- Internationalisation
 ## Démonstration
 
-https://user-images.githubusercontent.com/106016869/221311431-03b6d260-b41a-44f4-9ec5-759cade4bc46.mp4
+https://user-images.githubusercontent.com/106016869/221325289-4693e4ff-52b8-4391-88c7-9ef9c8452a53.mp4
+
 
 ## Interfaces
 ![Presentation1](https://user-images.githubusercontent.com/106016869/221314412-9b6afb0e-3a8f-44ed-868f-ea03ee4e3950.jpg)
@@ -41,6 +42,8 @@ Note : Toutes les valeurs textuelles sont stockées dans le fichier strings.xml,
 
 ### activity_main.xml
 Cette interface contient 2 champs de saisie [Email, Mot de passe] et un bouton [Se connecter, Réniitialiser]
+
+![image](https://user-images.githubusercontent.com/106016869/221325639-ea50ed3a-4962-4a2e-88b5-8b4a0dbe8f9e.png)
 
 Les champs de saisie sont des composants Material Design
 ```xml
@@ -100,7 +103,6 @@ public class SplashActivity extends Activity{
 Cette classe hérite de la classe Activity, elle contient un Handler qui permet de déclencher une action après un certain temps. Dans notre cas, nous déclencherons l'action après 3 secondes grâce à `Handler.postDelayed()`. Une fois le temps écoulé, nous allons lancer l'activité principale de l'application.
 
 Intent signifie intention, c'est une classe qui permet de définir une action dans le future, dans notre cas, nous voulons lancer l'activité principale.
-
 
 ## Partie 3 : Navigation entre Écrans
 Pour naviguer entre les écrans, nous devons utiliser la classe Intent, nous avons déjà utilisé cette classe dans la partie précédente.
@@ -201,11 +203,11 @@ L'internationalisation est une technique qui permet de traduire une application 
     <string name="titre">Your information</string>
 </resources>
 ```
-Afin de traduire aux 2 autres langues, nous devons créer 2 fichiers de ressources, un pour le français et un pour l'arabe. Nous allons créer un fichier de ressources pour le français et un autre pour l'arabe, et nous allons utiliser l'éditeur d'Android Studio pour faciliter la traduction.
+Afin de traduire aux 2 autres langues, nous devons créer 2 fichiers de ressources, un pour le français et un pour l'arabe. Nous allons créer un fichier de ressources pour le français et un autre pour l'arabe, et nous allons utiliser `Translations Editor` d'Android Studio pour faciliter la traduction.
 
-//TODO: Ajouter screeshot du tableau.
+![image](https://user-images.githubusercontent.com/106016869/221325074-9e0b91ec-2f01-4b50-a433-1546a7140152.png)
 
-Maintenant notre application peut s'adapter à plusieurs langues, comme nous l'avons testé en haut.
+Maintenant notre application peut s'adapter à plusieurs langues, comme nous l'avons testé dans la démonstration.
 
 ## Partie 5 : Toast
 Toast est une classe qui permet d'afficher un message à l'écran. Nous allons utiliser cette classe pour afficher un message à l'écran lorsque :

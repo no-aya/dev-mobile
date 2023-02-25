@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Connexion [TP2]</string>
+    <string name="reset">Réinitialiser</string>
+    <string name="back">Retour</string>
+    <string name="tutorial">Entrez vos informations</string>
+    <string name="toast_missu">Votre travail est toujours en attente !</string>
+    <string name="toast_back">Reprenez votre travail…</string>
+    <string name="toast_res">Redémarrez votre travail !</string>
+    <string name="deuxieme_champs">Mot de passe</string>
+    <string name="premier_champs">Email</string>
+    <string name="conn">Se connecter</string>
+    <string name="titre">Vos coordonnées</string>
+</resources>

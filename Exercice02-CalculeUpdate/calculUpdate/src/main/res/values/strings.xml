@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">[TP2] Login</string>
+    <string name="premier_champs">Email</string>
+    <string name="deuxieme_champs">Password</string>
+    <string name="conn">Connexion</string>
+    <string name="reset">Reset</string>
+    <string name="back">Return</string>
+    <string name="description" translatable="false">Icon for the app</string>
+    <string name="toast_message" translatable="false">Presented by Aya</string>
+    <string name="tutorial">Write your information</string>
+    <string name="toast_missu">Your work is still on hold !</string>
+    <string name="toast_res">Restarting your working!</string>
+    <string name="toast_back">Welcome back! Resume your work…</string>
+    <string name="titre">Your information</string>
+</resources>

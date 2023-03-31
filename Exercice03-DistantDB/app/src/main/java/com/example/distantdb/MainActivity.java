@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     EditText edit;
     ListView listTasks;
     ArrayAdapter<String> adapter = null;
-    String url = "https://a58f-105-159-133-152.eu.ngrok.io/calendar/";
+    String url = "http://10.0.0.12:8080/calender/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

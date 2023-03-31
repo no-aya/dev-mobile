@@ -6,3 +6,5 @@ L'intégralité des projets et TPs du module 5 du semestre 4 : Développement Mo
 - [TP 1 : Calculatrice](https://github.com/no-aya/dev-mobile/tree/main/TP01-Calcularice/Calculatrice/decimalCalculator) (Code source & démonstration)
 - [TP 2 : Splash screen, Navigation entre Écrans & Internationalisation](https://github.com/no-aya/dev-mobile/tree/main/TP02-LoginApp)
 
+## Partie 2 - Android et gestion de données
+- [Exercice 3 : Communiquer avec une BD distante](./Exercice03-DistantDB/README.md)

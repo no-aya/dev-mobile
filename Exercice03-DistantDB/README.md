@@ -259,3 +259,20 @@ btnAdd.setOnClickListener(new View.OnClickListener( ) {
 > **JsonObject** : permet de récupérer les données de la requête HTTP.
 >
 > **Toast** : permet d'afficher un message à l'utilisateur.
+
+Voici le résultat obtenu.
+
+/Insérer image de l'éxecution//
+
+
+## 5. Annexes
+### 5.1. Code source
+- [Code source](./app/)
+### 5.2. Liens utiles
+- [Retrofit](https://square.github.io/retrofit/)
+- [Gson]()
+- [JSON](https://www.json.org/json-fr.html)
+- [JSON to Java](https://www.jsonschema2pojo.org/)
+
+
+

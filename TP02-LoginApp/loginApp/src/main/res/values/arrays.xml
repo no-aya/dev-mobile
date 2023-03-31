@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="list_entry_values" />
+    <array name="list_entries">
+        <item>First</item>
+        <item>Second</item>
+        <item>Third</item>
+    </array>
+</resources>

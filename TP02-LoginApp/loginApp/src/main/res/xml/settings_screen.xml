@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="In-line preferences">
+        <CheckBoxPreference
+            android:key="checkbox_preference"
+            android:title="Checkbox preference"
+            android:summary="This is a checkbox"
+            android:defaultValue="true" />
+        <EditTextPreference
+            android:key="edittext_preference"
+            android:title="Edit text preference"
+            android:summary="An example that uses an edit text dialog"
+            android:dialogTitle="Enter your favorite animal" />
+        <ListPreference
+            android:key="list_preference"
+            android:title="List preference"
+            android:summary="An example that uses a list dialog"
+            android:dialogTitle="Choose one"
+            android:entries="@array/list_entries"
+            android:entryValues="@array/list_entry_values"
+            android:defaultValue="1" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Dialog-based preferences">
+        <EditTextPreference
+            android:key="edittext_dialog_preference"
+            android:title="Edit text preference"
+            android:summary="An example that uses an edit text dialog"
+            android:dialogTitle="Enter your favorite animal"
+            android:dialogMessage="Animals include: cat, dog, lion, tiger, etc."
+            android:positiveButtonText="OK"
+            android:negativeButtonText="Cancel" />
+        <ListPreference
+            android:key="list_dialog_preference"
+            android:title="List preference"
+            android:summary="An example that uses a list dialog"
+            android:dialogTitle="Choose one"
+            android:entries="@array/list_entries"
+            android:entryValues="@array/list_entry_values"
+            android:defaultValue="1" />
+        <MultiSelectListPreference
+            android:key="multiselect_list_preference"
+            android:title="Multi-select list preference"
+            android:summary="Picks an animal, any animal"
+            android:dialogTitle="Select favorite animals"
+            android:entries="@array/list_entries"
+            android:entryValues="@array/list_entry_values" />
+
+    </PreferenceCategory>
+
+
+
+</PreferenceScreen>

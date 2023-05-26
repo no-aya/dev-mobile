@@ -8,3 +8,6 @@ L'intégralité des projets et TPs du module 5 du semestre 4 : Développement Mo
 
 ## Partie 2 - Android et gestion de données
 - [Exercice 3 : Communiquer avec une BD distante](./Exercice03-DistantDB/README.md)
+
+## Evaluation : Annuaire des pays 
+- [Application](./aitoulahyane_aya_exam_IIBDCC_23/app/README.md)

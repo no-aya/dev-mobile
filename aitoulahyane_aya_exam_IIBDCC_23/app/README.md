@@ -1,12 +1,17 @@
 # Application : Gestion des pays
 
+## Demonstration
+
+https://github.com/no-aya/dev-mobile/assets/106016869/903be1ee-612c-4047-ab4f-87ef192b320c
+
+
 ## Description
 Ce projet est une application de gestion des pays. 
 Il permet de créer une liste de pays, leur captale et leur population.
 
 On peut les modifier et les supprimer.
 
-![](../../Screenshot_2023-05-26-12-00-57-460_ait.aya.roomdatabasedemo.png)
+![Screenshot_2023-05-26-12-00-57-460_ait aya roomdatabasedemo](https://github.com/no-aya/dev-mobile/assets/106016869/9ddb5423-4453-4892-943b-8ef16fa8cc28)
 
 ## Interfaces
 
